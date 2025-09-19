@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plaster&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <title>Spiral Sounds</title>
+</head>
+
+<body>
+  <div class="top-banner">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="header-menu" aria-label="Main menu">
+      <a href="#">Login</a>
+      <a href="#">Cart</a>
+      <form role="search">
+        <label for="search-input" class="visually-hidden">Search products</label>
+        <input type="text" placeholder="Search..." id="search-input">
+      </form>
+    </nav>
+  </div>
+
+  <header>
+    <img src="/images/spiral_logo.png" alt="Spiral Sounds Logo">
+    <div class="header-text">
+      <h1>Spiral Sounds</h1>
+      <p class="subhead">The best in vinyl</p>
+    </div>
+  </header>
+
+  <section class="genre-select-container">
+    <label for="genre-select">View by genre</label>
+    <select id="genre-select">
+      <option value="">Show All</option>
+    </select>
+  </section>
+
+  <main class="products" id="products-container"></main>
+  <footer>
+    <p>© Spiral Sounds</p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
